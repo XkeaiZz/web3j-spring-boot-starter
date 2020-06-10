@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+logging:
+  level:
+    root: debug
+---
+spring:
+  profiles: test
+  main:
+    allow-bean-definition-overriding: true
+logging:
+  level:
+    root: debug
+#web3j:
+#  server-address: https://rinkeby.infura.io/v3/e4fd1742a2d4435587f43abebeb48485
+#  #  server-address: http://127.0.0.1:8545
+#  admin-client: false
+#  include-raw-response: true
+#  scan-package: xyz.utools.web3j.contract
+#  contracts:
+#    RegisterAndManager: "0x9203da4357cc12acc297c5baf8d744154927674b"
+#  account-addr: 0x43a87239B4CF34536C257a7193E21bf46d0d2F25
+#  secrete: 2539897EE3C10E19886C59357F536933A7AFED4F0218E16EBEF4EA1414792504
+#  gas-provider: xyz.utools.web3j.DefaultGasProvider

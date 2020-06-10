@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.github.jntm.web3jspringbootstarter.Web3jAutoConfiguration,\
+  com.github.jntm.web3jspringbootstarter.Web3jContractAutoInjectionConfiguration
