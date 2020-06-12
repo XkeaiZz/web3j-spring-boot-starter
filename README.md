@@ -34,3 +34,15 @@ web3j:
   # 请自己实现此接口，并在这指明类路径及类名 此处为默认
   gas-provider: com.github.jntm.web3jspringbootstarter.DefaultGasProvider
 ```
+使用方法
+```java
+@Service
+class demo{
+    private RegisterAndManager registerAndManager;
+    // 目前只支持构造器注入
+    @Autowired
+    public demo(RegisterAndManager registerAndManager){
+        this.registerAndManager=registerAndManager;
+    }
+}
+```
